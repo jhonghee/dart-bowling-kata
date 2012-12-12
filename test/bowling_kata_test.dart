@@ -7,14 +7,8 @@ void main() {
   test('sum of values in list', () =>
       expect(55, sum([1,2,3,4,5,6,7,8,9,10])));
 
-  test('partition 2', () =>
-      expect([[1,2],[3,4],[5,6]], partition(2, [1,2,3,4,5,6])));
-
   test('map of partition 2', () =>
       expect([3,7,11], [[1,2],[3,4],[5,6]].map(sum)));
-
-  test('partition 3', () =>
-      expect([[1,2,3],[4,5,6],[7,8,9],[10,11]], partition(3, [1,2,3,4,5,6,7,8,9,10,11])));
 
   // Bowling Specs
   test('gutter game results in a score of zero', () =>

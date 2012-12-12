@@ -2,19 +2,6 @@ library bowling_kata;
 
 import 'dart:collection';
 
-List<List<int>> partition(int n, List coll) {
-  List newColl = [];
-  List elmColl;
-  for(int i=0; i<coll.length; i++) {
-    if(i%n == 0) {
-      elmColl = [];
-      newColl.add(elmColl);
-    }
-    elmColl.add(coll[i]);
-  }
-  return newColl;
-}
-
 List<int> take(int n, List coll) {
   List newColl = [];
   if( n > coll.length ) {
